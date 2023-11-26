@@ -15,6 +15,7 @@ public class Calculadora {
     }
 
     public double divisao(double valor1, double valor2) {
+        if(valor2 == 0) throw  new ArithmeticException();
         return valor1/valor2;
     }
 
